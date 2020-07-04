@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script>
+	var files = <%- JSON.stringify(files) %>;
+	console.log(files[0].transforms);
+</script>
+<body>
+	<a href="http://localhost:7000">Go Back</a>
+	<h2>Images</h2>
+	<% for(var i=0; i<files[0].transforms.length; i++) { %>
+		<h2><%= files[0].transforms[i].id %></h2>
+		<%if(files[0].transforms[i].id == 'thumbnail'){%>
+			<img src="<%= files[0].transforms[i].location %>" style="width: 250px; max-height: 200px">
+		<% } else {%>
+			<img src="<%= files[0].transforms[i].location %>" style="max-width: 1000px;">
+		<% } %>
+	<% } %>
+</body>
+</html>
