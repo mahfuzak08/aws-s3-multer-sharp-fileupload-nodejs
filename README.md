@@ -1,5 +1,5 @@
-#File upload useing nodejs multer-s3 into s3 bucket
-A very simple file upload useing nodejs multer-s3 into s3 bucket with resize for thumbnail. I'm useing minio file server like as aws s3 bucket system.
+#File upload using nodejs multer-s3 into s3 bucket
+A very simple file upload using nodejs multer-s3 into s3 bucket with resize for thumbnail. I'm useing minio file server like as aws s3 bucket system.
 
 ## References
 ### AWS-SDK
